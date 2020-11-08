@@ -1,0 +1,100 @@
+@font-face{
+		font-family: sansation_bold;
+		src : url(../font/sansation_bold.woff);
+}
+@font-face{
+		font-family: CormorantUpright-Regular;
+		src : url(../font/Cormorant_Upright/CormorantUpright-SemiBold.ttf);
+	}
+*{
+	box-sizing: border-box;
+	max-width: 100%;
+	margin: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	text-align: center;
+	font-family: CormorantUpright-Regular;
+	font-weight: bold;
+	font-size: 28px;
+	width: 100%;
+	z-index: 999;
+}
+
+header img{
+	width: 90%;
+}
+nav a{
+	font-family: Rockwell;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #eee;
+	padding: 15px;
+}
+nav{
+	padding: 10px;
+	width: 100%;
+	background: linear-gradient(141deg, #0fb8ad 10%, #1fc8db 51%, #2cb5e8 75%);
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+nav a:hover{
+	background: linear-gradient(141deg, #0fb8ad 10%, #1fc8db 51%, #2cb5e8 75%);
+	font-size: 1.5em;
+	color: white;
+}
+
+#clk{
+	font-family: Rockwell;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #eee;
+	position:absolute;
+	right: 10px;
+	top:0;
+}
+
+content li{
+	display: inline;
+	list-style-type: none;
+	list-style-position: inside;
+	font-family: CormorantUpright-Regular;
+	background-color: #bbb;
+}
+
+footer{
+	background: linear-gradient(141deg, #0fb8ad 10%, #1fc8db 51%, #2cb5e8 75%);
+	font-weight: bold;
+	width: 100%;
+	height: 250px;
+	margin-top:10px;
+	clear: both;
+}
+footer a{
+	text-decoration: none;
+	color: #eee;
+	margin-left: 20px;
+}
+footer a:hover{
+	color: white;
+}
+.ftFont{
+	font-family:CormorantUpright-Regular;
+	font-size: 1.3em;
+	color: #eee;
+}
+.ftFloat{
+	margin: 1px;
+	float: right;
+	width: 33%;
+}
+#contentUl{
+	height: 800px;
+}

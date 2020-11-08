@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+	<script type="text/javascript" src="../js/jsAll.js"></script>
+	<link rel="icon" type="image/icon" href="../media/aau_logo.ico">
+	<meta type="viewport" content="width=device-width, initial-scale=1">
+</head>	
+
+<body onload="theClock()">
+	<div id="outerDiv">
+		
+		<header id="top">
+			<img src="../media/aau_pic.png" alt="aau logo">
+			<h1>Admin</h1>
+		</header>
+
+		<nav>
+			<a href="../Training_Management.html">Home</a>
+			<a href="../pages/login.html" >Logout</a>
+			<a href="#" id="tch" class="not">Admin</a>
+			<a id="clk"></a>
+		</nav>
+
+		<content>
+			<h1>Register teacher</h1>
+			<div id="formDiv">
+				
+				<form id="formReg" method="POST" onsubmit="alert('Teacher successfully submitted!')">
+
+						<label>First Name</label>
+						<input id="fname" type="text" required="required" name="fname" oninput="reseting(this.id)">
+
+						<label>Middle Name</label>
+						<input id="mname" type="text" required="required" name="mname" oninput="reseting(this.id)">
+
+						<label>Last Name</label>
+						<input id="lname" type="text" required="required" name="lname" oninput="reseting(this.id)">
+						
+						<label>E-mail</label>
+						<input id="email" type="text" required="required" name="email" oninput="reseting(this.id)">
+						
+						<label>Phone No.</label>
+						<input id="phone" type="number" required="required" name="phone" oninput="reseting(this.id)">
+						
+						<label>Sex</label>
+						<select name="select">
+							<option selected="selected">Male</option>
+							<option>Female</option>
+						</select>
+						
+						<label>Age</label>
+						<input id="age" type="number" required="required" name="age" step="1" oninput="reseting(this.id)">
+						
+						<label>Photo</label>
+						<input type="file" name="file" required="required" oninput="reseting(this.id)">
+
+						<input type="checkbox" name="agree" oninput="reseting(this.id)">
+						<label >I agree with your terms!</label>
+
+						<input type="submit" name="signup" value="Register">
+
+				</form>
+			</div>
+		</div>
+		</content>
+
+		<footer>
+			<div id="ftGo" class="ftFont ftFloat">
+				<a href="#top">Goto Top</a>
+				<a href="http://www.aau.edu.et/">AAU HomePage</a>
+			</div>
+			<div id="ftCon" class="ftFont ftFloat">
+				<a href="mailto:aau4k@gmail.com">Contact Us</a>
+				<a href="../pages/about.html">About Us</a>
+			</div>
+			<div id="ftAdd" class="ftFont ftFloat">
+				<p>Address:</p>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>

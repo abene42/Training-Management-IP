@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<script type="text/javascript" src="../js/jsAll.js"></script>
+	<link rel="icon" type="image/icon" href="../media/aau_logo.ico">
+	<meta type="viewport" content="width=device-width, initial-scale=1">
+</head>	
+
+<body onload="theClock()">
+	<div id="outerDiv">
+		
+		<header id="top">
+			<img src="../media/aau_pic.png" alt="aau logo">
+			<h1>Student</h1>
+		</header>
+
+		<nav>
+			<a href="student.html">Home</a>
+			<a href="feedback.html" class="student">Feedback</a>
+			<a href="Scourse.html" class="student">Course</a>
+			<a href="Attendance.html" class="student">Attendance</a>
+			<a href="login.html" >Logout</a>
+			<a href="#" id="tch" class="not">Student</a>
+			<a id="clk" class="not"></a>
+		</nav>
+
+		<aside>
+			<a href="../student.html">Home</a>
+			<a href="../pages/register.html" >Register</a>
+			<a href="../pages/login.html" >Login</a>
+		</aside>
+
+		<content>
+			<div id="regContent" class="fonty shady" onclick="window.location='../pages/register.html'">
+				<h1 id="hh">Training A</h1>
+				<p>Register for training A</p>
+			</div>
+		</content>
+			<div id="logContent" class="fonty shady" onclick="window.location='../pages/register.html'">
+				<h1>Training B</h1>
+				<p>Register for training B</p>
+			</div>
+
+			<div id="newsContent" class="fonty shady" onclick="window.location='../pages/register.html'">
+				<h1>Training C</h1>
+				<p>Register for training C</p>
+			</div>
+
+			<div id="subscribe">
+				<form method="POST" action="subscriber.php" onsubmit="return validateLog()">
+					<h1>Subscribe for latest Updates</h1>
+					<input id="uname" type="text" name="subscriber_name" placeholder="Full Name" oninput="reseting(this.id)">
+					<input id="pwd1" type="text" name="subscriber_email" placeholder="E-mail" oninput="reseting(this.id)">
+					<input type="submit" name="submit" value="Subscribe">
+				</form>
+			</div>
+
+		<footer>
+			<div id="ftGo" class="ftFont ftFloat">
+				<a href="#top">Goto Top</a>
+				<a href="http://www.aau.edu.et/">AAU HomePage</a>
+			</div>
+			<div id="ftCon" class="ftFont ftFloat">
+				<a href="#">Contact Us</a>
+				<a href="#">About Us</a>
+			</div>
+			<div id="ftAdd" class="ftFont ftFloat">
+				<p>Address:</p>
+			</div>
+		</footer>
+
+	</div>
+</body>
+</html>

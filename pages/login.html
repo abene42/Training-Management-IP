@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<script type="text/javascript" src="../js/jsAll.js"></script>
+	<link rel="icon" type="image/icon" href="../media/aau_logo.ico">
+	<meta typw="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="theClock()">
+			<header id="top">
+					<img src="../media/aau_pic.png" alt="aau logo">
+					<h1>Login</h1>
+			</header>
+
+			<nav>
+					<a href="../Training_Management.html" >Home</a>
+					<a href="register.html" >Register</a>
+					<a href="login.html" >Login</a>
+					<a id="clk"></a>
+			</nav>
+
+			<content>
+				<div id="loginContent">
+					<div id="formDiv">
+						<form id="formLogin" method="POST" onsubmit="return validateLog()">
+						
+							<label>Username</label>
+							<input id="uname" type="text" name="uname" required="required" oninput="reseting(this.id)">
+							
+							<label>Password</label>
+							<input id="pwd1" type="password" required="required" name="pwd" oninput="reseting(this.id)">
+							<label id="lblWarning"></label>
+
+							<input type="submit" name="login" value="Login" >
+						</form>
+					</div>
+				</div>
+			</content>
+
+		<footer>
+			<div id="ftGo" class="ftFont ftFloat">
+				<a href="#top">Goto Top</a>
+				<a href="http://www.aau.edu.et/">AAU HomePage</a>
+			</div>
+			<div id="ftCon" class="ftFont ftFloat">
+				<a href="#">Contact Us</a>
+				<a href="#">About Us</a>
+			</div>
+			<div id="ftAdd" class="ftFont ftFloat">
+				<p>Address:</p>
+			</div>
+		</footer>
+</body>
+</html>

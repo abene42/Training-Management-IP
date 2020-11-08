@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/feedback.css">
+	<script type="text/javascript" src="../js/jsAll.js"></script>
+	<link rel="icon" type="image/icon" href="../media/aau_logo.ico">
+	<meta type="viewport" content="width=device-width, initial-scale=1">
+</head>	
+
+<body onload="theClock()">
+	<div id="outerDiv">
+		
+		<header id="top">
+			<img src="../media/aau_pic.png" alt="aau logo">
+			<h1>Student</h1>
+		</header>
+
+		<nav>
+			<a href="student.html">Home</a>
+			<a href="feedback.html" class="student">Feedback</a>
+			<a href="Scourse.html" class="student">Course</a>
+			<a href="Attendance.html" class="student">Attendance</a>
+			<a href="login.html" >Logout</a>
+			<a href="#" id="tch" class="not">Student</a>
+			<a id="clk" class="not"></a>
+		</nav>
+
+			<content>
+				<div id="feedContent">
+					<form method="POST" onsubmit="alert('Feedback submitted!')">
+						<h1>Your feedback will go here!</h1>
+						<select>
+							<option>Teacher 1</option>
+							<option>Teacher 2</option>
+							<option>Teacher 3</option>
+							<option>Teacher 4</option>
+							<option>Teacher 5</option>
+						</select>
+						<textarea id="feedArea"></textarea>
+						<input type="submit" name="submit" value="Give Feedback">
+					</form>
+				</div>
+			</content>
+
+			<footer>
+				<div id="ftGo" class="ftFont ftFloat">
+					<a href="#top">Goto Top</a>
+					<a href="http://www.aau.edu.et/">AAU HomePage</a>
+				</div>
+				<div id="ftCon" class="ftFont ftFloat">
+					<a href="#">Contact Us</a>
+					<a href="#">About Us</a>
+				</div>
+				<div id="ftAdd" class="ftFont ftFloat">
+					<p>Address:</p>
+				</div>
+			</footer>
+</body>
+</html>

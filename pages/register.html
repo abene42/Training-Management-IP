@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css">
+		<script type="text/javascript" src="../js/jsAll.js"></script>
+		<link rel="icon" type="image/icon" href="../media/aau_logo.ico">
+		<meta type="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body onload="theClock()">
+		<header id="top">
+				<img src="../media/aau_pic.png" alt="aau logo">
+				<h1>Registration</h1>
+		</header>
+		
+		<nav>
+				<a href="../Training_Management.html">Home</a>
+				<a href="register.html" >Register</a>
+				<a href="login.html" >Login</a>
+				<a id="clk"></a>
+		</nav>
+
+		<div id="outerDiv">
+			<div id="formDiv">
+				
+				<form id="formReg" method="POST" action="student.html">
+
+						<label>Username</label>
+						<input id="uname" type="text" name="uname" required="required" oninput="reseting(this.id)">
+						
+						<label>Password</label>
+						<input id="pwd1" type="password" name="pwd" required="required" oninput="reseting(this.id)">
+						
+						<label>Confirm Password</label>
+						<input id="pwd2" type="password" name="confirm" required="required" oninput="reseting(this.id)">
+						
+						<label>E-mail</label>
+						<input id="email" type="text" name="email" required="required" oninput="reseting(this.id)">
+						
+						<label>Phone No.</label>
+						<input id="phone" type="number" name="phone" required="required" oninput="reseting(this.id)">
+						
+						<label>Sex</label>
+						<select name="select">
+							<option selected="selected">Male</option>
+							<option>Female</option>
+						</select>
+						
+						<label>Age</label>
+						<input id="age" type="number" name="age" required="required" step="1" oninput="reseting(this.id)">
+						
+						<label>Photo</label>
+						<input id="photo" type="file" name="file" required="required" oninput="reseting(this.id)">
+
+						<input type="checkbox" name="agree" required="required" oninput="reseting(this.id)">
+						<label >I agree with your terms!</label>
+
+						<input type="submit" name="signup" value="Sign Up">
+
+				</form>
+			</div>
+		</div>
+
+		<footer>
+			<div id="ftGo" class="ftFont ftFloat">
+				<a href="#top">Goto Top</a>
+				<a href="http://www.aau.edu.et/">AAU HomePage</a>
+			</div>
+			<div id="ftCon" class="ftFont ftFloat">
+				<a href="#">Contact Us</a>
+				<a href="#">About Us</a>
+			</div>
+			<div id="ftAdd" class="ftFont ftFloat">
+				<p>Address:</p>
+			</div>
+		</footer>
+	</body>
+</html>

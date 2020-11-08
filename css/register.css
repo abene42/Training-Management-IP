@@ -1,0 +1,123 @@
+@font-face{
+		font-family: sansation_bold;
+		src : url(../font/sansation_bold.woff);
+}
+@font-face{
+		font-family: CormorantUpright-Regular;
+		src : url(../font/Cormorant_Upright/CormorantUpright-SemiBold.ttf);
+	}
+*{
+	box-sizing: border-box;
+	max-width: 100%;
+	margin: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+header{
+	text-align: center;
+	margin: 0;
+	font-family:CormorantUpright-Regular;
+	font-size: 28px;
+	width: 100%;
+	background-color: white;
+	z-index: 999;
+}
+
+header img{
+	width: 90%;
+}
+
+nav{
+	padding: 10px;
+	width: 100%;
+	background: linear-gradient(141deg, #0fb8ad 10%, #1fc8db 51%, #2cb5e8 75%);
+	position: sticky;
+	top: 0;
+}
+nav a{
+	font-family: Rockwell;
+	font-size: 1.5em;
+	text-decoration: none;
+	font-weight: bold;
+	color: #eee;
+	padding: 15px;
+}
+nav a:hover{
+	background: linear-gradient(141deg, #0fb8ad 10%, #1fc8db 51%, #2cb5e8 75%);
+	font-size: 1.5em;
+	color: white;
+}
+
+input,select{
+	/*background: linear-gradient(-135deg,rgba(237, 248, 239,0.5), #ffffff);*/
+	background-color: none;
+	display: block;
+	margin:10px 0;
+	border:none;
+	border-bottom: 2px outset lightblue;
+	border-radius: 5px;
+	color: black;
+	font-family: CormorantUpright-Regular;
+	font-size: 1.3em;
+}
+input[type="checkbox"],label{
+	display: inline;
+	font-family: CormorantUpright-Regular;
+	font-size: 1.5em;	
+}
+
+#clk{
+	font-family: Rockwell;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #eee;
+	position:absolute;
+	right: 10px;
+	top:0;
+}
+
+#formDiv{
+	width: 30%;
+	margin: auto;
+	padding: 20px;
+}
+
+#outerDiv{
+	background: linear-gradient(-135deg,rgba(237, 248, 239,0.5), #ffffff);
+}
+
+footer{
+	background: linear-gradient(141deg, #0fb8ad 10%, #1fc8db 51%, #2cb5e8 75%);
+	font-weight: bold;
+	width: 100%;
+	height: 250px;
+	margin-top:10px;
+	clear: both;
+}
+footer a{
+	text-decoration: none;
+	color: #eee;
+	margin-left: 20px;
+}
+footer a:hover{
+	color: white;
+}
+.ftFont{
+	font-family:CormorantUpright-Regular;
+	font-size: 1.3em;
+	color: #eee;
+}
+.ftFloat{
+	margin: 1px;
+	float: right;
+	width: 33%;
+}
+#tch{
+	position: fixed;
+	background: linear-gradient(141deg, #0fb8ad 10%, #1fc8db 51%, #2cb5e8 75%);
+	right: 0;
+	bottom: 0;
+}
